@@ -65,6 +65,7 @@ var saySpaceMotto = function() {
 }
 
 
+
 // My Functions
 toyStory(130);
 var totalKids = getPlayTime();
@@ -73,5 +74,9 @@ var totalToys = getTotalToys(2);
 console.log("So each spoiled brat was able to play with at least " + totalToys + " today.");
 var enjoyPlay = getGoodTime();
 console.log(enjoyPlay);
-var buzzMotto = saySpaceMotto()
+var buzzMotto = saySpaceMotto();
 console.log(buzzMotto)
+
+
+// Finish
+console.log("I've had enough of that round up for the day. I'm ready to space out. I'm sure " + toyCowboy + " and " + toyRanger + " would agree with me!")
