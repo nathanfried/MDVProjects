@@ -22,7 +22,15 @@ var getTimesPickedUp = function (name, b, w ) {
     console.log(name + " picked up Buzz " + b + " times and Woody " + w + " times, making it a total of " + pickedUp + ".")
 }
 
-//Boolean Function
+// Boolean Function
+var getGoodTime = function () {
+    var goodTime = 30
+    if ((goodTime >= 30 && goodTime <= 50)) {
+        console.log("The children who played with " + toyCowboy + " and " + toyRanger + " for " + goodTime + " minutes or more, enjoyed their playtime.")
+    } else {
+        console.log("The children who had less time with the toys, enjoyed playtime more.")
+    }
+}
 
 
 // My Functions
