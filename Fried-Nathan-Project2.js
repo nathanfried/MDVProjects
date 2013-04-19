@@ -30,11 +30,11 @@ var getPlayTime = function () {
 // Number Function
 var getTotalToys = function (toys) {
     while (toys >= 2) {
-        console.log("As long as each child had " + toys + " toys, they were able to act out Toy Story.");
+        console.log("The proposal for " + toys + " kids to have one at a time did not go well.");
         toys = toys - 1
         
         if (toys === toys) {
-            console.log("But if each child only had " + toys + " they were upset, because they wanted both.");
+            console.log("If each child only had " + toys + " they were upset, because they wanted both.");
         } else {
             console.log("They didn't have any toy to play with.");
         }
@@ -55,12 +55,12 @@ var getGoodTime = function () {
 
 // String Function
 var saySpaceMotto = function() {
-    var motto1 = "To inifinity"
-    var motto2 = "and beyond!"
+    var motto1 = "\"To inifinity"
+    var motto2 = "and beyond!\""
     if (motto1 && motto2) {
-        return("The children were shouting " + motto1 + " " + motto2 + " by the end of the movie.");
+        return("The whole time the children were shouting " + motto1 + " " + motto2);
     } else{
-        return("The children forgot " + toyRanger + "'s motto was.");
+        return("The children forgot what " + toyRanger + "'s motto was.");
     }
 }
 
@@ -68,9 +68,9 @@ var saySpaceMotto = function() {
 // My Functions
 toyStory(130);
 var totalKids = getPlayTime();
-console.log("The total amount of kids that played with the toys was " + totalKids + ".");
+console.log("With " + totalKids + " brats wanting both toys, they needed to learn how to share.");
 var totalToys = getTotalToys(2);
-console.log("Each child was able to play with at least " + totalToys + " today.");
+console.log("So each spoiled brat was able to play with at least " + totalToys + " today.");
 var enjoyPlay = getGoodTime();
 console.log(enjoyPlay);
 var buzzMotto = saySpaceMotto()
