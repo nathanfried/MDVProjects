@@ -79,4 +79,4 @@ console.log(buzzMotto)
 
 
 // Finish
-console.log("I've had enough of that round up for the day. I'm ready to space out. I'm sure " + toyCowboy + " and " + toyRanger + " would agree with me!")
+console.log("I'm ready to space out. I'm sure " + toyCowboy + " and " + toyRanger + " would agree with me!")
