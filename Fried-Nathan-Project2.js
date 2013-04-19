@@ -34,7 +34,7 @@ var getTotalToys = function (toys) {
         toys = toys - 1
         
         if (toys === toys) {
-            console.log("If each child only had " + toys + " they were upset, because they wanted both.");
+            console.log("If each child only had " + toys + ", they were upset, because they wanted both.");
         } else {
             console.log("They didn't have any toy to play with.");
         }
@@ -46,9 +46,9 @@ var getTotalToys = function (toys) {
 var getGoodTime = function () {
     var goodTime = 30;
     if ((goodTime >= 30 && goodTime <= 50)) {
-        return "The children who had more time with the toys, didn't watch the movie as much.";
+        return "The children, who had more time with the toys, didn't watch the movie as much.";
     } else {
-        return "The children who had less time with the toys, watched the movie more.";
+        return "The children, who had less time with the toys, watched the movie more.";
     }
 }
 
