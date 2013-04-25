@@ -4,9 +4,8 @@
 // SDI 1304
 // Project 3
 
-var myName = {
+var problemName = {
     
-    "name":     "Nathan",
     "problem1": "repository",
     "problem2": "Github",
     "problem3": "Terminal",
@@ -19,11 +18,11 @@ var myName = {
         this.problem1 = newProblem
         
     },
+    
 };
 
-var profName = {
+var solutionName = {
     
-    "name": "Lee",
     "solution1": "git merge",
     "solution2": "git checkout",
     "solution3": "git add file",
@@ -36,10 +35,10 @@ var profName = {
         return files
     },
 }
-console.log(characterInfo.characters[0].characterFirstName + " " + characterInfo.characters[0].characterLastName + " was having an issue with his " + myName.problem2 + ".");
+console.log(characterInfo.characters[0].characterFirstName + " " + characterInfo.characters[0].characterLastName + " was having an issue with his " + problemName.problem2 + ".");
 console.log("He sought advice from his professor, " + characterInfo.characters[1].characterFirstName + " " + characterInfo.characters[1].characterLastName + ".");
-console.log("As " + characterInfo.characters[0].characterFirstName + " started his third project, he thought he had a problem with his " + myName.problem1 + ".");
+console.log("As " + characterInfo.characters[0].characterFirstName + " started his third project, he thought he had a problem with his " + problemName.problem1 + ".");
 console.log("There seemed to be an error that said " + errorInfo.errors[0].error1 + ".");
-console.log(characterInfo.characters[1].characterFirstName + " recommended to type " + profName.solution1 + ".");
-console.log(characterInfo.characters[0].characterFirstName + " then noticed there was something wrong with " + myName.problem2 + ".");
+console.log(characterInfo.characters[1].characterFirstName + " recommended to type " + solutionName.solution1 + ".");
+console.log(characterInfo.characters[0].characterFirstName + " then noticed there was something wrong with " + problemName.problem2 + ".");
 
