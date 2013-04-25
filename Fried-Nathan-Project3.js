@@ -6,21 +6,19 @@
 
 var myName = {
     
-    "name": "Name",
-    "subject1": "Subject 1",
-    "subject2": "Subject 2",
-    "subject3": "Subject 3",
-    "Funkshun": function () { //Method Accessor
-        var totalSubject = this.subject1 + this.subject2 + this.subject3;
-        return totalSubject
+    "name":     "Nathan",
+    "problem1": "repository",
+    "problem2": "Github",
+    "problem3": "Terminal",
+    "solution": function () { // Method Procedure
+        var totalProblem = this.problem1 + this.problem2 + this.problem3;
     },
     
-    "setParameter" = function (newSubject) {
+    "setProblem": function (newProblem) { // Method Mutator
         
-        this.subject1 = newSubject
+        this.problem1 = newProblem
         
-    }
-    
+    },
 };
 
 var myName2 = {
