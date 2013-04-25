@@ -21,17 +21,18 @@ var myName = {
     },
 };
 
-var myName2 = {
+var profName = {
     
-    "name": "Name",
-    "subject1": "Subject 1",
-    "subject2": "Subject 2",
-    "subject3": "Subject 3",
-    "Funkshun": function () {
-        var totalSubject = this.subject1 + this.subject2 + subject3;
-        return totalSubject
+    "name": "Lee",
+    "solution1": "git merge",
+    "solution2": "git checkout",
+    "solution3": "git add file",
+    "Funkshun": function (result, files) { // Method Function
+        if (totalFiles > 0) {
+            files = files - 3
+        } else {
+            files = files - 1
+        }
+        return files
     },
-    
-    
-    
 }
