@@ -79,4 +79,8 @@ console.log(buzzMotto)
 
 
 // Finish
+<<<<<<< HEAD
 console.log("I'm ready to space out. I'm sure " + toyCowboy + " and " + toyRanger + " would agree with me!")
+=======
+console.log("I'm ready to space out. I'm sure " + toyCowboy + " and " + toyRanger + " would agree with me!")
+>>>>>>> f3e8a80029ceecbc3144a3e00fd8ee9970ae0a9e
