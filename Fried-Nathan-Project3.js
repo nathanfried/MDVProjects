@@ -16,7 +16,7 @@ var problemName = {
     "setProblem": function (newProblem) { // Method Mutator
         
         this.problem1 = newProblem
-        
+        return newProblem // Return String
     },
     
 };
@@ -26,14 +26,13 @@ var solutionName = {
     "solution1": "git merge",
     "solution2": "git checkout",
     "solution3": "git add file",
-    "solution4": 5,
     "Fixer": function (total, files) { // Method Function
-        if (total > 3) {
+        if (total > 3) { // Conditional
             files = files - 0;
         } else {
             files = files - 2;
         }
-        return files
+        return files // Return number
     },
 }
 
@@ -44,7 +43,7 @@ var timeSpent = {
     "workTime" : 6,
     "overallTime": function () { // Method Accessor
         var totalTime = this.hardTime + this.fixTime + this.workTime;
-        return totalTime
+        return totalTime // Return number
     },
 };
 
