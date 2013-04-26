@@ -48,10 +48,12 @@ var timeSpent = {
     },
 };
 
+// Main Objectives
+
 // Method Procedure
 console.log(characterInfo.characters[0].characterFirstName + " " + characterInfo.characters[0].characterLastName + " was having an issue with his " + problemName.problem1 + ".");
-console.log("As " + characterInfo.characters[0].characterFirstName + " started his third project, he thought he had a problem with his " + problemName.problem2 + ".");
-console.log(characterInfo.characters[0].characterFirstName + " explained what was being typed out on " + problemName.problem3 + ".");
+console.log("As he started his third project, he thought he had a problem with his " + problemName.problem2 + ".");
+console.log(characterInfo.characters[0].characterFirstName + " fiddled around on " + problemName.problem3 + " for quite a while but was having no luck.");
 
 // JSON Data
 console.log("There seemed to be an error that said " + errorInfo.errors[0].error1 + ".");
@@ -62,11 +64,11 @@ console.log("He sought advice from his professor, " + characterInfo.characters[1
 // Method Function
 console.log(characterInfo.characters[1].characterFirstName + " recommended to type " + solutionName.solution1 + ".");
 console.log(characterInfo.characters[1].characterFirstName + " then suggested trying " + solutionName.solution2 + ".");
-console.log("After some more research " + characterInfo.characters[1].characterFirstName + " then suggested " + solutionName.solution3 + ".");
+console.log("After some more research, " + characterInfo.characters[1].characterFirstName + " then suggested " + solutionName.solution3 + ".");
 var getSolution = solutionName.Fixer(1, 5);
-console.log("The result was " + getSolution + ".");
+console.log("Github was saying there were only " + getSolution + " files in the repository.");
 var getSolution = solutionName.Fixer(5, 5);
-console.log("The result was " + getSolution + ".");
+console.log("After adding the files and committing, there were " + getSolution + " files.");
 
 // Method Mutator
 problemName.setProblem("missing file.")
@@ -78,4 +80,3 @@ console.log("However, with " + characterInfo.characters[1].characterFirstName + 
 console.log(characterInfo.characters[0].characterFirstName + " only needed to work on the project for " + timeSpent.workTime + " hours.");
 var getTimeSpent = timeSpent.overallTime()
 console.log("Therefore, the overall time spent was " + getTimeSpent + " hours.");
-
