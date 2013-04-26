@@ -9,7 +9,7 @@ var problemName = {
     "problem1": "repository",
     "problem2": "Github",
     "problem3": "Terminal",
-    "solution": function () { // Method Procedure
+    "overallProblem": function () { // Method Procedure
         var totalProblem = this.problem1 + this.problem2 + this.problem3;
     },
     
@@ -26,19 +26,48 @@ var solutionName = {
     "solution1": "git merge",
     "solution2": "git checkout",
     "solution3": "git add file",
-    "Funkshun": function (result, files) { // Method Function
-        if (totalFiles > 0) {
-            files = files - 3
+    "solution4": 5,
+    "Fixer": function (total, files) { // Method Function
+        if (total > 3) {
+            files = files - 0;
         } else {
-            files = files - 1
+            files = files - 2;
         }
         return files
     },
 }
-console.log(characterInfo.characters[0].characterFirstName + " " + characterInfo.characters[0].characterLastName + " was having an issue with his " + problemName.problem2 + ".");
-console.log("He sought advice from his professor, " + characterInfo.characters[1].characterFirstName + " " + characterInfo.characters[1].characterLastName + ".");
-console.log("As " + characterInfo.characters[0].characterFirstName + " started his third project, he thought he had a problem with his " + problemName.problem1 + ".");
-console.log("There seemed to be an error that said " + errorInfo.errors[0].error1 + ".");
-console.log(characterInfo.characters[1].characterFirstName + " recommended to type " + solutionName.solution1 + ".");
-console.log(characterInfo.characters[0].characterFirstName + " then noticed there was something wrong with " + problemName.problem2 + ".");
 
+var timeSpent = {
+    
+    "prepTime" : "4",
+    "relaxTime": "5",
+    "workTime" : "6",
+    "overallTime": function () { // Method Accessor
+        var totalTime = this.prepTime + this.relaxTime + this.workTime;
+        return totalTime
+    },
+};
+
+// Method Procedure
+console.log(characterInfo.characters[0].characterFirstName + " " + characterInfo.characters[0].characterLastName + " was having an issue with his " + problemName.problem1 + ".");
+console.log("As " + characterInfo.characters[0].characterFirstName + " started his third project, he thought he had a problem with his " + problemName.problem2 + ".");
+console.log(characterInfo.characters[0].characterFirstName + " explained what was being typed out on " + problemName.problem3 + ".");
+
+// JSON Data
+console.log("There seemed to be an error that said " + errorInfo.errors[0].error1 + ".");
+console.log("There was another error that mentioned " + errorInfo.errors[1].error2 + ".");
+console.log("For some reason the files were " + errorInfo.errors[2].error3 + ".");
+console.log("He sought advice from his professor, " + characterInfo.characters[1].characterFirstName + " " + characterInfo.characters[1].characterLastName + ".");
+
+// Method Function
+console.log(characterInfo.characters[1].characterFirstName + " recommended to type " + solutionName.solution1 + ".");
+console.log(characterInfo.characters[1].characterFirstName + " then suggested trying " + solutionName.solution2 + ".");
+console.log("After some more research " + characterInfo.characters[1].characterFirstName + " then suggested " + solutionName.solution3 + ".");
+var getSolution = solutionName.Fixer(1, 5);
+console.log("The result was " + getSolution + ".");
+var getSolution = solutionName.Fixer(5, 5);
+console.log("The result was " + getSolution + ".");
+
+// Method Mutator
+problemName.setProblem("missing file.")
+console.log("What the real problem was, was a " + problemName.problem1);
