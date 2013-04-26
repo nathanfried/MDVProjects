@@ -39,11 +39,11 @@ var solutionName = {
 
 var timeSpent = {
     
-    "prepTime" : "4",
-    "relaxTime": "5",
-    "workTime" : "6",
+    "hardTime" : 4,
+    "fixTime"  : 1,
+    "workTime" : 6,
     "overallTime": function () { // Method Accessor
-        var totalTime = this.prepTime + this.relaxTime + this.workTime;
+        var totalTime = this.hardTime + this.fixTime + this.workTime;
         return totalTime
     },
 };
@@ -71,3 +71,11 @@ console.log("The result was " + getSolution + ".");
 // Method Mutator
 problemName.setProblem("missing file.")
 console.log("What the real problem was, was a " + problemName.problem1);
+
+// Method Accessor
+console.log("The amount of time that kicked " + characterInfo.characters[0].characterFirstName + "s butt was " + timeSpent.hardTime + " hours.");
+console.log("However, with " + characterInfo.characters[1].characterFirstName + "'s help, the time to fix the problem only took " + timeSpent.fixTime +" hour.");
+console.log(characterInfo.characters[0].characterFirstName + " only needed to work on the project for " + timeSpent.workTime + " hours.");
+var getTimeSpent = timeSpent.overallTime()
+console.log("Therefore, the overall time spent was " + getTimeSpent + " hours.");
+
