@@ -4,18 +4,29 @@
 // SDI 1304
 // JSON data
 
-var playerInfo = {
-    "players": [
+var characterInfo = {
+    "characters": [
         {
-        "playerFirstName": "Nate",
-        "playerLastName": "Fried"
+        "characterFirstName": "Nate",
+        "characterLastName": "Fried"
         },
         {
-        "playerFirstName": "Lee",
-        "playerLastName": "Lewis"
+        "characterFirstName": "Lee",
+        "characterLastName": "Lewis"
         }
     ]
-    
+};
 
-    
+var errorInfo = {
+    "errors": [
+        {
+        "error1": "\"Unable to push\""        
+        },
+        {
+        "error2": "\"Unable to pull\""    
+        },
+        {
+        "error3": "\"Unable to merge\""    
+        }
+    ]
 }
